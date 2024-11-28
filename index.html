@@ -1,68 +1,147 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Character Profile</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landak</title>
+    <link rel="icon" type="image" href="download-_20_-removebg-preview (1).png">    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #343131;
+            color: #EEDF7A;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #A04747;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li a {
+            color: #EEDF7A;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu li:hover {
+            background-color: #8C3B3B;
+        }
+
+        .aside {
+            background-color: #A04747;
+            padding: 15px;
+            color: #EEDF7A;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #D8A25E;
+            color: #343131;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Card 1 -->
-    <div class="card">
-      <div class="header">
-        <h1>Roxana</h1>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">Characters</a>
-          <a href="#">Help</a>
-        </nav>
-      </div>
-      <div class="content">
-        <h2>Carsis Fedelian</h2>
-        <p class="subtitle">(카시스 페델리안)</p>
-        <p class="description">Carsis is very innocent and has a very black and white worldview, at the beginning of the story. The Fedelians are known Carsis is considered the most upstanding of them all. He seems to be able to cause fear in people with just a look.</p>
-        <div class="about">
-          <h3>About</h3>
-          <ul>
-            <li>Affiliation</li>
-            <li>Status</li>
-            <li>Relationship</li>
-            <li>Alias</li>
-            <li>Special Abilities</li>
-          </ul>
-        </div>
-      </div>
-      <img src="https://via.placeholder.com/200x300" alt="Carsis Image" class="character-img">
+    <div class="header">
+        <h1>Shidou Ryusei</h1>
     </div>
 
-    <!-- Card 2 -->
-    <div class="card">
-      <div class="header">
-        <h1>Roxana</h1>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">Characters</a>
-          <a href="#">Help</a>
-        </nav>
-      </div>
-      <div class="content">
-        <h2>Dion Agriche</h2>
-        <p class="subtitle">(디온 아그리체)</p>
-        <p class="description">Dion is very intelligent and ruthless, even compared to the other Agriche children. He rarely shows emotions unless it is involving his half-sister Roxana Agriche, but has shown to be as sadistic as his parents when he attacked Carsis Fedelian.</p>
-        <div class="about">
-          <h3>About</h3>
-          <ul>
-            <li>Affiliation</li>
-            <li>Status</li>
-            <li>Relationship</li>
-            <li>Alias</li>
-            <li>Special Abilities</li>
-          </ul>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li><a href="https://example.com/favorite-food" target="_blank">Favorite food</a></li>
+                <li><a href="https://example.com/favorite-player" target="_blank">Favorite football player</a></li>
+                <li><a href="https://example.com/height" target="_blank">Height</a></li>
+                <li><a href="https://example.com/name-meaning" target="_blank">Name meaning</a></li>
+            </ul>
         </div>
-      </div>
-      <img src="https://via.placeholder.com/200x300" alt="Dion Image" class="character-img">
+
+        <div class="col-6 col-s-9">
+            <h1>Who is he?</h1>
+            <p>He's a football player in Blue Lock, and he's currently at Paris X Gen</p>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Date of Birth</h2>
+                <p>7th July, Tokyo</p>
+                <h2>Favorite Football Player</h2>
+                <p>Zlatan Ibrahimovic</p>
+                <h2>Age</h2>
+                <p>He is 18 years old!</p>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <div class="footer">
+        <a href="https://bluelock.fandom.com/wiki/Ryusei_Shido" target="_blank" style="color: #343131; text-decoration: none;">More about my hubby!</a>
+    </div>
 </body>
 </html>
