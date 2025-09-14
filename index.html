@@ -1,147 +1,203 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landak</title>
-    <link rel="icon" type="image" href="download-_20_-removebg-preview (1).png">    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.2 Khadijah</title>
+    <link rel="icon" type="img" href="img/SOLID.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
 
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div class="logo">SMPI Nurul Itishom<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Agenda">Agenda</a></li>
+          <li><a href="#Memories">Memories</a></li>
+        </ul>
+        <a href="#contact" class="btn-orange">Contact</a>
+      </nav>
+    </header>
 
-        [class*="col-"] {
-            float: left;
-            padding: 15px;
-        }
+    <!-- HERO SECTION -->
 
-        html {
-            font-family: "Lucida Sans", sans-serif;
-        }
-
-        .header {
-            background-color: #343131;
-            color: #EEDF7A;
-            padding: 15px;
-        }
-
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu li {
-            padding: 8px;
-            margin-bottom: 7px;
-            background-color: #A04747;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-
-        .menu li a {
-            color: #EEDF7A;
-            text-decoration: none;
-            display: block;
-        }
-
-        .menu li:hover {
-            background-color: #8C3B3B;
-        }
-
-        .aside {
-            background-color: #A04747;
-            padding: 15px;
-            color: #EEDF7A;
-            text-align: center;
-            font-size: 14px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-
-        .footer {
-            background-color: #D8A25E;
-            color: #343131;
-            text-align: center;
-            font-size: 12px;
-            padding: 15px;
-        }
-
-        /* For mobile phones: */
-        [class*="col-"] {
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 600px) {
-            /* For tablets: */
-            .col-s-1 {width: 8.33%;}
-            .col-s-2 {width: 16.66%;}
-            .col-s-3 {width: 25%;}
-            .col-s-4 {width: 33.33%;}
-            .col-s-5 {width: 41.66%;}
-            .col-s-6 {width: 50%;}
-            .col-s-7 {width: 58.33%;}
-            .col-s-8 {width: 66.66%;}
-            .col-s-9 {width: 75%;}
-            .col-s-10 {width: 83.33%;}
-            .col-s-11 {width: 91.66%;}
-            .col-s-12 {width: 100%;}
-        }
-
-        @media only screen and (min-width: 768px) {
-            /* For desktop: */
-            .col-1 {width: 8.33%;}
-            .col-2 {width: 16.66%;}
-            .col-3 {width: 25%;}
-            .col-4 {width: 33.33%;}
-            .col-5 {width: 41.66%;}
-            .col-6 {width: 50%;}
-            .col-7 {width: 58.33%;}
-            .col-8 {width: 66.66%;}
-            .col-9 {width: 75%;}
-            .col-10 {width: 83.33%;}
-            .col-11 {width: 91.66%;}
-            .col-12 {width: 100%;}
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>Shidou Ryusei</h1>
-    </div>
-
-    <div class="row">
-        <div class="col-3 col-s-3 menu">
-            <ul>
-                <li><a href="https://example.com/favorite-food" target="_blank">Favorite food</a></li>
-                <li><a href="https://example.com/favorite-player" target="_blank">Favorite football player</a></li>
-                <li><a href="https://example.com/height" target="_blank">Height</a></li>
-                <li><a href="https://example.com/name-meaning" target="_blank">Name meaning</a></li>
-            </ul>
+    <section id="home" class="home container">
+      <div class="intro">
+        <h1>Selamat datang!</h1>
+        <h2>Kelas 9.2 Khadijah</h2>
+        <p>
+          Memberikan akses untuk profil siswi, wali kelas, agenda kegiatan, dan dokumentasi kegiatan.
+        </p>
+        <a href="https://www.instagram.com/nurul.itishom?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">lihat lebih lanjut?</a>
+        <div class="social-links">
+          <a href="#" class="btn">Get In Touch</a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
         </div>
+      </div>
+      <div class="home-img">
+        <img class="img-windah" src="img/apapun ini.png" alt="Abstract Illustration" />
+        <img class="img-header" src="img/apapun ini.png" alt="Abstract Illustration" />
+      </div>
+    </section>
 
-        <div class="col-6 col-s-9">
-            <h1>Who is he?</h1>
-            <p>He's a football player in Blue Lock, and he's currently at Paris X Gen</p>
-        </div>
-
-        <div class="col-3 col-s-12">
-            <div class="aside">
-                <h2>Date of Birth</h2>
-                <p>7th July, Tokyo</p>
-                <h2>Favorite Football Player</h2>
-                <p>Zlatan Ibrahimovic</p>
-                <h2>Age</h2>
-                <p>He is 18 years old!</p>
-            </div>
-        </div>
+    <div class="text-wrapper">
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
+      <a href="#" class="marquee">
+        Baca selengkapnya! <i class="bx bx-right-top-arrow-circle"></i>
+      </a>
     </div>
+    
+    <section id="About">
+       <div class="About-header">
+        <h1>About</h1>
+        <p>All about us, fact, vision mission, and etc</p>
+       </div>
+     <div class="About-content">
+      <p> Kami ada angkatan ke-8 dari sekolah ini, dimulai dari tahun 2023 hingga tahun 2026. Dengan beranggotakan 28 siswi hingga saat ini. <br>
+         Faktanya, kami adalah angkatan yang memiliki perubahan sistem pendidikan setiap naik kelas, membuat kami harus kembali terus beradaptasi dengan kurikulum 
+         yang baru. <br> Keinginan kami adalah cepat-cepat lulus dan yang penting lulus agar langsung naik ke jenjang selanjutnya dengan cepat. <br> 
+         Visi kami adalah menjadi kelas yang aman dan tentram tanpa ada masalah dari luar maupun dari dalam hingga hari kelulusan. Upaya kami dalam menciptakan visi kami adalah
+         dengan terus bersikap baik dan menjaga nama kelas agar terus terjaga. Kami juga berusaha menjaga kekompakan terutama saat sekolah sedang mengadakan lomba atau class meeting agar menang. <br>
+         Pada saat kelas 7, wali kelas kami adalah Ustadzah Astrie dan Ustadzah Aulia. Pada kelas 8, Ustadzah Winda dan Ustadzah Hanissa.
+         Dan pada tahun terakhir, wali kelas kami adalah Ustadzah Winda dan Ustadzah Hasna.
+      </p>
 
-    <div class="footer">
-        <a href="https://bluelock.fandom.com/wiki/Ryusei_Shido" target="_blank" style="color: #343131; text-decoration: none;">More about my hubby!</a>
+    <div class="About">
+      <div class="About-item">
+        <img src="img/pngu.png" alt="Photo 1">
+      </div>
+      <div class="About-item">
+        <img src="img/pngu2.png" alt="Photo 3">
+      </div>
+      <div class="About-item">
+        <img src="img/pngu3.png" alt="Photo 3">
+      </div>
     </div>
-</body>
+      <a href="#" class="btn-orange">more?</a>
+    </section>
+
+    <!-- AGENDA SECTION -->
+    <section id="Agenda">
+      <div class="Agenda-header">
+        <h1>Agenda</h1>
+        <p>Agenda 9.2.</p>
+      </div>
+      <div class="Agenda">
+        <div class="Agenda-item">
+          <img src="img/mamah mau pulang.png" alt="Photo 1" />
+        </div>
+        <div class="Agenda-item">
+          <img src="img/mamahh mau pulang (9).png" alt="Photo 2" />
+        </div>
+        <div class="Agenda-item">
+          <img src="img/mamah mau pulang (2).png" alt="Photo 3" />
+        </div>
+        <div class="Agenda-item">
+          <img src="img/mamah mau pulang (3).png" alt="Photo 3" />
+        </div>
+        <div class="Agenda-item">
+          <img src="img/mamah mau pulang (4).png" alt="Photo 3" />
+        </div>
+        <div class="Agenda-item">
+          <img src="img/mamah mau pulang (5).png" alt="Photo 3" />
+        </div>
+        <div class="Agenda-item" >
+          <img src="img/mamah mau pulang (6).png" alt="Photo 3">
+        </div>
+        <div class="Agenda-item">
+          <img src="img/mamah mau pulang (7).png" alt="Photo 3">
+        </div>
+        <div class="Agenda-item">
+          <img src="img/mamah mau pulang (8).png" alt="Photo 3">
+        </div>
+    
+        </div>
+      </div>
+
+      <a href="#" class="btn-orange">more?</a>
+    </section>
+
+   <!-- MEMORIES SECTION -->
+    <section id="Memories">
+     <div class="Memories-header">
+      <h1>Memories</h1>
+      <p>All memories from class 7 to 9</p>
+     </div>
+     <div class="Memories">
+      <div class="Memories-item">
+        <img src="img/10(1).png" alt="Photo 3">
+      </div>
+      <div class="Memories-item">
+        <img src="img/11(1).png" alt="Photo 3">
+      </div>
+      <div class="Memories-item">
+        <img src="img/6(1).png" alt="Photo">
+      </div>
+      <div class="Memories-item">
+        <img src="img/7(1).png" alt="Photo 3">
+      </div>
+      <div class="Memories-item">
+        <img src="img/yaudah.png" alt="Photo 3">
+      </div>
+      <div class="Memories-item">
+        <img src="img/8(1).png" alt="Photo 3">
+      </div>
+      <div class="Memories-item">
+        <img src="img/9(1).png" alt="Photo 3">
+      </div>
+      <div class="Memories-item">
+        <img src="img/pngu (1).png" alt=" Photo 3">
+      </div>
+      <div class="Memories-item">
+        <img src="img/pngu (2).png" alt="Photo 3">
+      </div>
+     </div>
+
+      <a href="#" class="btn-orange">this is the last page!</a>
+
+   </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div>
+        <div class="logo-footer">fünf<span>.</span></div>
+        <p>Copyright &copy; 2025 Kelompok 5 | All Right Reserved</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bxs-up-arrow"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
