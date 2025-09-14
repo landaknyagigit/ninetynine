@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --background: #f5f7fb;
+  --primary: #211a3b;
+  --secondary: #1d802f;
+  --tertiary: rgb(210, 65, 159);
+  --light-blue: #f7fda0;
+  --orange: #ffdd1e;
+  --yellow: #db5dc6;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+/* Container */
+.container {
+  padding: 0 6%;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--background);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.logo span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar li {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  color: var(--primary);
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.navbar li:hover {
+  color: var(--yellow);
+}
+
+.btn-orange {
+  font-size: 1.2rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: var(--pink);
+  transition: all 0.5s ease;
+}
+.btn-orange:hover {
+  background-color: var(--secondary); /* Latar berubah saat hover */
+  transform: translateY(-5px); /* Sedikit mengangkat tombol */
+}
+
+.home {
+  margin-top: 4rem;
+  min-height: 680px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home-img {
+  position: relative;
+  width: 400px;  /* Sesuaikan dengan lebar kontainer */
+}
+
+.img-windah {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Tambahkan ukuran yang sesuai jika perlu */
+  max-width: 100%; /* Atur lebar gambar sesuai kebutuhan */
+}
+
+.img-header {
+  width: 100%;
+}
+
+.intro h1 {
+  color: var(--orange);
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2rem;
+  margin-bottom: 10%;
+}
+
+.intro h2 {
+  color: var(--primary);
+  font-family: "Outfit", sans-serif;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.4;
+}
+
+.intro p {
+  color: var(--primary);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10%;
+  width: 410px;
+  opacity: 0.7;
+}
+
+.intro p span {
+  color: var(--primary);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.social-links {
+  margin-top: 10%;
+  display: flex; /* Flexbox untuk pengaturan sejajar */
+  justify-content: start; /* Posisi ikon mulai dari kiri */
+  align-items: center; /* Pastikan vertikal sejajar */
+  gap: 15px; /* Beri jarak antar ikon */
+  transition: all 0.5s ease;
+}
+
+.social-links i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Ukuran lebih kecil */
+  height: 50px; /* Ukuran lebih kecil */
+  background-color: #e7e9ee;
+  border-radius: 50%; /* Tetap bulat */
+  transition: all 0.5s ease;
+}
+
+.social-links i:hover {
+  background-color: var(--yellow); /* Latar saat hover */
+  transform: scale(1.1); /* Efek membesar saat hover */
+  transition: all 0.5s ease;
+}
+
+.social-links i {
+  font-size: 1.8rem; /* Ukuran ikon disesuaikan */
+  color: var(--primary);
+  transition: all 0.5s ease;
+}
+
+.btn {
+  border-radius: 50px;
+  background: var(--secondary);
+  display: inline-flex;
+  padding: 9px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ff5ecc;
+}
+
+.social-links .btn {
+  background-color: var(--secondary);
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.social-links .btn:hover {
+  background-color: var(--orange); /* Latar berubah saat hover */
+  transform: translateY(-5px); /* Sedikit mengangkat tombol */
+}
+
+/* Marquee */
+.text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  background: var(--secondary);
+  overflow: hidden;
+}
+
+.marquee {
+  animation: marquee 5000ms linear infinite;
+  color: var(--background);
+  font-size: 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 2rem 6rem;
+}
+
+.text-wrapper:hover {
+  .marquee {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+/* Marquee ends */
+
+/* About */
+#About {
+  padding: 3rem 6%;
+}
+
+.About {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+}
+
+.About-header {
+  justify-content: center;
+  text-align: center;
+}
+
+.About-content p {
+  text-align: center; /* bikin paragraf rata tengah */
+  line-height: 1.6;   /* biar lebih rapi terbaca */
+}
+
+.About-item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.About-item img:hover {
+  transform: scale(1.05);
+}
+
+#About .btn-orange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  margin: 2rem auto auto;
+}
+
+ 
+/* about */
+
+/* Agenda */
+#Agenda {
+  padding: 3rem 6%;
+}
+
+.Agenda {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+}
+
+.Agenda-header {
+  justify-content: center;
+  text-align: center;
+}
+
+.Agenda-header h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.Agenda-header p {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 2.6rem;
+}
+
+.Agenda-item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.Agenda-item img:hover {
+  transform: scale(1.05);
+}
+
+#Agenda .btn-orange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  margin: 2rem auto auto;
+}
+
+/* Memo */
+#Memories {
+  padding: 3rem 6%;
+}
+
+.Memories {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+}
+
+.Memories-header {
+  justify-content: center;
+  text-align: center;
+}
+
+.Memories-header h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.Memories-header p {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 2.6rem;
+}
+
+.Memories-item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.Memories-item img:hover {
+  transform: scale(1.05);
+}
+
+#Memories .btn-orange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin: 4rem auto auto;
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--tertiary);
+  color: var(--background);
+}
+
+.logo-footer {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--background);
+}
+
+.logo-footer span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-blue);
+  padding: 0.8rem;
+  border-radius: 100px;
+  transition: 0.5s ease;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--light-blue);
+}
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--primary);
+}
